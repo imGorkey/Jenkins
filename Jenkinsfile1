@@ -1,0 +1,20 @@
+pipeline
+{
+    stages
+    {
+        stage('SCM Checkout')
+        {
+            steps{echo 'Downloading code'}
+        }
+
+        stage('Code Building')
+        {
+            steps{echo 'Building Code'}
+        }
+
+        stage('Code Deployed')
+        {
+            steps{echo 'Deploying code'}
+        }
+    }
+}
